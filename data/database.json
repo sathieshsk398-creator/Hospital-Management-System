@@ -1,0 +1,283 @@
+{
+  "patients": [
+    {
+      "id": "pat-1",
+      "name": "Sarah Jenkins",
+      "age": 64,
+      "gender": "Female",
+      "bloodType": "A+",
+      "phone": "(555) 234-5678",
+      "email": "sarah.jenkins@email.com",
+      "admissionDate": "2026-06-25",
+      "status": "Observation",
+      "roomNumber": "B-204",
+      "vitals": {
+        "bp": "135/88",
+        "hr": 82,
+        "temp": 99.1,
+        "spo2": 96
+      },
+      "symptoms": "Mild shortness of breath, generalized fatigue, slight cough post-bacterial pneumonia recovery.",
+      "labResults": "WBC: 11.2 K/uL (slightly elevated), Hb: 12.1 g/dL, Creatinine: 0.9 mg/dL. Chest X-Ray shows residual infiltrates in lower left lobe.",
+      "medicalHistory": "Type 2 Diabetes (managed with Metformin), Hypertension (Lisinopril 10mg daily), admitted last month for acute bacterial pneumonia.",
+      "complicationRisk": "Medium",
+      "readmissionProbability": 38,
+      "aiRiskAnalysis": "Patient displays medium readmission risk due to age (64), comorbid hypertension and type 2 diabetes, and lingering post-pneumonia residual infiltrates. Shortness of breath indicates slow respiratory recovery. Recommended to monitor oxygen saturation twice daily, schedule a pulmonary follow-up within 7 days, and strictly regulate blood glucose levels."
+    },
+    {
+      "id": "pat-2",
+      "name": "Michael Chang",
+      "age": 45,
+      "gender": "Male",
+      "bloodType": "O-",
+      "phone": "(555) 876-5432",
+      "email": "mchang@email.com",
+      "admissionDate": "2026-06-26",
+      "status": "Critical",
+      "roomNumber": "ICU-102",
+      "vitals": {
+        "bp": "102/65",
+        "hr": 110,
+        "temp": 101.8,
+        "spo2": 91
+      },
+      "symptoms": "Severe acute chest pain radiating to left shoulder, fever, persistent dry cough, tachypnea, severe breathing difficulty.",
+      "labResults": "Troponin I: 0.05 ng/mL (borderline), CRP: 42 mg/L (high), WBC: 14.5 K/uL (elevated sepsis marker). Blood cultures pending. D-Dimer: 850 ng/mL.",
+      "medicalHistory": "Hypercholesterolemia (Atorvastatin 20mg), mild asthma, no previous cardiac surgeries.",
+      "complicationRisk": "High",
+      "readmissionProbability": 72,
+      "aiRiskAnalysis": "HIGH RISK: Patient is in sepsis-prone inflammatory status with SpO2 of 91% on room air. Elevated CRP and WBC combined with tachypnea and fever meet SIRS criteria. Risk of escalation to severe acute respiratory distress syndrome (ARDS) or acute coronary event is elevated. Immediate oxygen therapy, broad-spectrum IV antibiotics, and urgent echocardiogram/CT pulmonary angiogram are recommended."
+    },
+    {
+      "id": "pat-3",
+      "name": "Elena Rodriguez",
+      "age": 29,
+      "gender": "Female",
+      "bloodType": "B-",
+      "phone": "(555) 456-7890",
+      "email": "elena.r@email.com",
+      "admissionDate": "2026-06-27",
+      "status": "Stable",
+      "roomNumber": "A-110",
+      "vitals": {
+        "bp": "118/76",
+        "hr": 72,
+        "temp": 98.4,
+        "spo2": 99
+      },
+      "symptoms": "Localized swelling, warmth, and throbbing pain in lower left abdomen. Nausea but no active emesis.",
+      "labResults": "WBC: 9.8 K/uL (normal range), Lipase: 35 U/L (normal), Urine hCG: Negative.",
+      "medicalHistory": "Ovarian cysts removed via laparoscopy in 2024. Penicillin allergy.",
+      "complicationRisk": "Low",
+      "readmissionProbability": 12,
+      "aiRiskAnalysis": "Low readmission risk. Vitals are completely hemodynamically stable. Normal WBC and negative pregnancy test rule out major acute pelvic infection or ectopic pregnancy. Abdominal ultrasound is planned to evaluate for localized ovarian cyst or focal hernia. Outpatient management remains highly probable after diagnosis."
+    },
+    {
+      "id": "pat-4",
+      "name": "Marcus Vance",
+      "age": 78,
+      "gender": "Male",
+      "bloodType": "AB+",
+      "phone": "(555) 901-2345",
+      "email": "mvance@email.com",
+      "admissionDate": "2026-06-24",
+      "status": "Stable",
+      "roomNumber": "B-315",
+      "vitals": {
+        "bp": "128/72",
+        "hr": 65,
+        "temp": 97.9,
+        "spo2": 97
+      },
+      "symptoms": "Post-operative knee stiffness, mild incisional pain, mild localized erythema, no joint effusion.",
+      "labResults": "Hb: 11.5 g/dL (stable baseline), Platelets: 240 K/uL, INR: 2.3 (therapeutic on Warfarin).",
+      "medicalHistory": "Total Left Knee Arthroplasty (TKA) performed on June 24. Chronic Atrial Fibrillation (Warfarin therapy), Mild Osteoarthritis.",
+      "complicationRisk": "Medium",
+      "readmissionProbability": 24,
+      "aiRiskAnalysis": "Moderate risk primarily tied to age (78) and anticoagulant management (Warfarin) for atrial fibrillation. Left knee incision is clean and intact. Physical therapy compliance is excellent. Risk of deep vein thrombosis (DVT) is mitigated by ongoing Warfarin therapy, but requires careful INR tracking to prevent hematoma or excessive incisional bleeding."
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-1",
+      "name": "Dr. Allison Carter",
+      "specialty": "Cardiology",
+      "email": "a.carter@stjudehospital.org",
+      "phone": "(555) 111-2222",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=200",
+      "schedule": [
+        { "day": "Monday", "hours": "08:00 - 16:00", "maxAppointments": 8 },
+        { "day": "Wednesday", "hours": "08:00 - 16:00", "maxAppointments": 8 },
+        { "day": "Friday", "hours": "08:00 - 12:00", "maxAppointments": 4 }
+      ],
+      "availability": "Available"
+    },
+    {
+      "id": "doc-2",
+      "name": "Dr. Robert Chen",
+      "specialty": "Pulmonology",
+      "email": "r.chen@stjudehospital.org",
+      "phone": "(555) 333-4444",
+      "avatar": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=200",
+      "schedule": [
+        { "day": "Tuesday", "hours": "09:00 - 17:00", "maxAppointments": 10 },
+        { "day": "Thursday", "hours": "09:00 - 17:00", "maxAppointments": 10 }
+      ],
+      "availability": "In Surgery"
+    },
+    {
+      "id": "doc-3",
+      "name": "Dr. Emily Taylor",
+      "specialty": "Internal Medicine",
+      "email": "e.taylor@stjudehospital.org",
+      "phone": "(555) 555-6666",
+      "avatar": "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=200",
+      "schedule": [
+        { "day": "Monday", "hours": "09:00 - 17:00", "maxAppointments": 12 },
+        { "day": "Tuesday", "hours": "09:00 - 17:00", "maxAppointments": 12 },
+        { "day": "Wednesday", "hours": "09:00 - 17:00", "maxAppointments": 12 },
+        { "day": "Thursday", "hours": "09:00 - 12:00", "maxAppointments": 6 }
+      ],
+      "availability": "On Call"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt-1",
+      "patientId": "pat-1",
+      "patientName": "Sarah Jenkins",
+      "doctorId": "doc-2",
+      "doctorName": "Dr. Robert Chen",
+      "date": "2026-06-30",
+      "time": "10:30",
+      "status": "Scheduled",
+      "symptoms": "Shortness of breath recovery tracking.",
+      "notes": "Post-pneumonia clinical evaluation. Run spirometry test if SpO2 maintains > 95%.",
+      "waitMetricScore": 9
+    },
+    {
+      "id": "appt-2",
+      "patientId": "pat-3",
+      "patientName": "Elena Rodriguez",
+      "doctorId": "doc-3",
+      "doctorName": "Dr. Emily Taylor",
+      "date": "2026-06-29",
+      "time": "14:15",
+      "status": "Scheduled",
+      "symptoms": "Lower left abdominal soreness.",
+      "notes": "Follow-up regarding cyst sonogram results and blood panels.",
+      "waitMetricScore": 8
+    }
+  ],
+  "billing": [
+    {
+      "id": "bill-1",
+      "patientId": "pat-1",
+      "patientName": "Sarah Jenkins",
+      "date": "2026-06-25",
+      "items": [
+        { "description": "General Ward Bed (2 Days)", "cost": 700 },
+        { "description": "Chest Radiography (X-Ray)", "cost": 220 },
+        { "description": "Bacterial Culture & Panels", "cost": 150 },
+        { "description": "IV Administration & Fluids", "cost": 180 }
+      ],
+      "subtotal": 1250,
+      "insuranceCover": 1000,
+      "amountDue": 250,
+      "status": "Paid"
+    },
+    {
+      "id": "bill-2",
+      "patientId": "pat-2",
+      "patientName": "Michael Chang",
+      "date": "2026-06-26",
+      "items": [
+        { "description": "ICU Intensive Care Unit Bed (1 Day)", "cost": 1800 },
+        { "description": "Cardiology Consultation", "cost": 350 },
+        { "description": "Cardiac Troponin & CRP Assays", "cost": 210 },
+        { "description": "Oxygen Therapy Support", "cost": 400 },
+        { "description": "IV Antibiotic Treatment", "cost": 320 }
+      ],
+      "subtotal": 3080,
+      "insuranceCover": 2464,
+      "amountDue": 616,
+      "status": "Unpaid"
+    },
+    {
+      "id": "bill-3",
+      "patientId": "pat-3",
+      "patientName": "Elena Rodriguez",
+      "date": "2026-06-27",
+      "items": [
+        { "description": "Outpatient Emergency Bay Admit", "cost": 450 },
+        { "description": "Urinalysis and Complete Metabolic Panel", "cost": 180 }
+      ],
+      "subtotal": 630,
+      "insuranceCover": 500,
+      "amountDue": 130,
+      "status": "Pending Insurance"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "inv-1",
+      "name": "Albuterol Inhaler (90mcg)",
+      "category": "Medication",
+      "quantity": 120,
+      "minRequired": 30,
+      "unit": "Units",
+      "location": "Pharmacy Floor 1",
+      "status": "In Stock"
+    },
+    {
+      "id": "inv-2",
+      "name": "Propofol Emulsion IV (10mg/mL, 20mL)",
+      "category": "Medication",
+      "quantity": 14,
+      "minRequired": 25,
+      "unit": "Vials",
+      "location": "ICU Medication Bay",
+      "status": "Low Stock"
+    },
+    {
+      "id": "inv-3",
+      "name": "N95 Particulate Respirator",
+      "category": "PPE",
+      "quantity": 2400,
+      "minRequired": 500,
+      "unit": "Masks",
+      "location": "Main Supply Ward A",
+      "status": "In Stock"
+    },
+    {
+      "id": "inv-4",
+      "name": "Disposable Surgical Nitrile Gloves (Medium)",
+      "category": "PPE",
+      "quantity": 80,
+      "minRequired": 150,
+      "unit": "Boxes (100ct)",
+      "location": "Main Supply Ward B",
+      "status": "Low Stock"
+    },
+    {
+      "id": "inv-5",
+      "name": "Syringe with Needle (3mL, 22G)",
+      "category": "Surgical Supplies",
+      "quantity": 3000,
+      "minRequired": 600,
+      "unit": "Units",
+      "location": "Clinical Nursing Hub",
+      "status": "In Stock"
+    },
+    {
+      "id": "inv-6",
+      "name": "Portable Pulse Oximeter",
+      "category": "Equipment",
+      "quantity": 3,
+      "minRequired": 8,
+      "unit": "Devices",
+      "location": "Triage Desk",
+      "status": "Low Stock"
+    }
+  ]
+}

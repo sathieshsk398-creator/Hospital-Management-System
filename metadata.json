@@ -1,0 +1,6 @@
+{
+  "name": "Hospital Management System",
+  "description": "Full-stack application managing patient records, billing, inventory, and doctor shifts, featuring an advanced Gemini AI Differential Diagnosis Advisor, live profile integration, and professional PDF clinical report exporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
